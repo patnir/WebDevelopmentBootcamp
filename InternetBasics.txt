@@ -1,0 +1,21 @@
+User went to a website
+
+http request -> asking for the contents of the page
+
+Request is made it to the server
+
+Data is too big to be sent as one packet
+
+Traffic report
+
+Finding the right address
+	Query is submitted to your ISP
+	Within ISP, the DNS takes teh Domain name and turns it into an IP address
+	Request is sent to the desired IP address via HTTP 
+	Request finds the fastest path possible to the server with the specified IP
+	This is not a a direct journey, it requires hoping from server to server until we arrive
+
+Udemy server responds
+	Thre requested server figures out what exactly we're asking for 
+	The server build us the right content, often pulling information from database
+	The server responds with an combination of HTML, CSS and Javascript
