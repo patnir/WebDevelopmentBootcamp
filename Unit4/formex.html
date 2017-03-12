@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+</head>
+<body>
+<h1>Registration</h1>
+<form>
+	<div>
+		<label>First Name: <input type="text" placeholder="First Name" name="FirstName" required></label>
+		<label>Last Name: <input type="text" placeholder="Last Name" name="LastName" required></label>
+	</div>
+	<div>
+		<label>Male <input type="radio" name="gender" value="Male" required="true"></label>
+		<label>Female <input type="radio" name="gender" value="Female"></label>
+		<label>Other <input type="radio" name="gender" value="Other"></label>
+	</div>
+	<div>
+		<label>Email: <input type="email" name="" required="true"></label>
+		<label>Password: <input type="password" name="password" required="true" title="5 to 10 characters" pattern=".{5,10}"></label>
+	</div>
+	<div>
+		<label>Birthday: 
+			<select required name="Month">
+				<option selected="true" disabled="true" value="">Month</option>
+				<option value="January">January</option>
+				<option value="February">February</option>
+			</select>
+			<select required name="Day">
+				<option selected disabled value="">Day</option>
+				<option value="1">01</option>
+				<option value="2">02</option>
+				<option value="3">03</option>
+			</select>
+			<select required name="Year">
+				<option selected disabled value="">Year</option>
+				<option value="1995">1995</option>
+				<option value="1996">1996</option>
+			</select>
+		</label>
+	</div>
+	<div>
+		<input type="submit" name="submit" value="Done">
+	</div>
+</form>
+</body>
+</html>
+
+<!-- example file:///C:/WebDevelopmentBootcamp/Unit4/formex.html?FirstName=Rahul&LastName=Patni&gender=Male&password=asdasdf&Month=January&Day=2&Year=1996&submit=Done -->
