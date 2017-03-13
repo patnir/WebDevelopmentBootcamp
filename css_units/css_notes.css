@@ -1,0 +1,52 @@
+body {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background: url();
+	color: rgba(0, 200, 100, .05);
+	border-color: purple;
+	border-width: 50px;
+	border-style: solid;
+
+	border: 5px solid purple;
+}
+
+/*Every anchor tag inside an li*/
+
+li a {
+
+}
+
+/*class*/
+
+.hello {
+
+}
+
+/*id*/
+
+#hello {
+
+}
+
+/*Adjacent selector*/
+
+h4 + ul {
+
+}
+
+/*Attribute selector*/
+
+a[href="https://www.google.com"] {
+
+}
+
+input[type="text"] {
+
+}
+
+/*nth of type*/
+/*Every 5th div, or 2nd li*/
+
+ul:nth-of-type(3 or even) {
+	background: purple;
+}
