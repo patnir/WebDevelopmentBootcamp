@@ -1,0 +1,29 @@
+/*
+https://cdn.pixabay.com/photo/2013/10/17/14/35/melons-197025_960_720.jpg
+https://cdn.pixabay.com/photo/2015/08/03/03/08/green-872866_960_720.jpg
+https://cdn.pixabay.com/photo/2013/05/05/19/26/leaves-108969_960_720.jpg
+https://cdn.pixabay.com/photo/2017/02/06/12/34/reptile-2042906_960_720.jpg
+https://cdn.pixabay.com/photo/2015/08/27/13/59/leaf-910532_960_720.jpg
+https://cdn.pixabay.com/photo/2015/06/25/14/13/water-plant-821293_960_720.jpg
+https://cdn.pixabay.com/photo/2013/10/16/22/56/meadow-196567_960_720.jpg
+https://cdn.pixabay.com/photo/2016/07/20/17/55/frog-1530803_960_720.jpg
+https://cdn.pixabay.com/photo/2014/07/29/08/55/cactus-404362_960_720.jpg	
+*/
+
+p {
+	margin: 1.66%;
+	font-family: 'Raleway';
+	font-size: 23px;
+	font-weight: 800px;
+	text-transform: uppercase;
+	padding-bottom: 3px;
+	border-bottom: 0.5px solid black;
+	width: 63.33%;
+}
+
+img {
+	width: 30%;
+	height: 50vh;
+	margin: 1.66%;
+	float: left;
+}
