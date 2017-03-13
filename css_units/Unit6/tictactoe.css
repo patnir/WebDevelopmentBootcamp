@@ -1,0 +1,29 @@
+table {
+	margin: auto auto;
+}
+
+h1 {
+	margin: 50px auto;
+	text-align: center;
+}
+
+td {
+	width: 100px;
+	height: 100px;
+	margin: 50px;
+	border-width: 0px;
+}
+
+tr td:nth-of-type(2) {
+	border-left-width: 1px;
+	border-right-width: 1px;
+	border-style: solid;
+	border-color: black;
+}
+
+tr:nth-of-type(2) td {
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-style: solid;
+	border-color: black;
+}
