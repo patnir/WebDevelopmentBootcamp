@@ -10,3 +10,31 @@ setInterval(sing, 1000) // calls sing every 1000ms
 setInterval(function() {
 	consol.log("anonymous function!");
 }, 2000);
+
+Unit 11 arrays:
+
+var friends = ["", "", ""];
+
+friends[3] = "asdf"; // adds on the fly
+
+
+friends[10] = "asdf"
+
+friends = ["", "", "", "asdf", undefined x 6, "asdf"];
+
+can hold any types of data at the same time
+
+friends.length = 5
+
+// inbuild array functions
+
+push, pop
+
+unshift -> add to front of array
+shift -> remove first element of array and returns
+
+indexOf -> find an item from an array
+	-1 if doesnt find it
+
+slice(1, 3) includex index 1 and 2
+
