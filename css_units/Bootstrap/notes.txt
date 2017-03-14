@@ -1,0 +1,16 @@
+2 ways to add the link -> the bootstrap css file or the hosted link
+buttons -> btn btn-default btn-info btn-lg btn-xs
+btn-danger {
+	background-color: orange; // I can change the color
+}
+
+Bootstrap stuff is added as a class
+
+class="jumbotron"
+
+class="container" {
+	gives some padding and margin quickly // prototyping
+}
+
+Forms
+
