@@ -1,0 +1,12 @@
+=== -> equal value and type 
+null == undefined -> true
+NaN == NaN -> true
+
+
+Higher Order Functions
+
+setInterval(sing, 1000) // calls sing every 1000ms
+
+setInterval(function() {
+	consol.log("anonymous function!");
+}, 2000);
