@@ -38,3 +38,21 @@ indexOf -> find an item from an array
 
 slice(1, 3) includex index 1 and 2
 
+
+
+arr.forEach(someFunction)
+
+arr.forEach(function(color) {
+	console.log(color);
+})
+
+
+OBjects:
+
+var person = {
+	name: "Cindy",
+	city: "LA",
+	age: "123"
+} // key value pair
+
+console.log(person.name or person["name"])
