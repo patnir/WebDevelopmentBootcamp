@@ -1,0 +1,86 @@
+Document Object Model - interface between js and html/css
+
+DOM -> everything is stored inside of the document object
+
+console.dir(document)
+
+Keywords -> select and manipulate
+
+var h1 = document.querySelector("h1");
+
+h1.style.color = "pink";
+
+var body = document.querySelector("body");
+var isBlue = false;
+
+setInterval(function()  {
+	if (isBlue) {
+		body.style.background = "white";
+	} else {
+		body.style.background = "red";
+	}
+	isBlue = !isBlue;
+}, 1000);
+
+DOM selectors
+
+document.URL
+document.links
+document.body
+document.head
+
+document.getElementById()
+document.getElementByClassName()
+document.getElementByTagName()
+document.querySelector() // use CSS selectors
+document.querySelectorAll()
+
+DOM Manipulation:
+
+	Manually / using classes
+
+	changing an element's style
+	adding/removing classes
+	changing the content of a tag
+	changing attricutes (src, href)
+
+	Separation of concerns (we don't want a crossover of domains)
+
+	var tag = document.getElementById("highlight");
+	.some-class {
+		color: blue;
+		border: 10px solid red;
+	} / define this class in CSS
+
+	tag.classList.add/remove/toggle(if remove, then add; if present then remove)("some-class")
+
+	classList is not an array
+
+
+Manipulating text and content:
+
+	var tag = document.querySelector("p");
+	tag.textContent = "asdf asdf asdf"; // gets rid of html styling ex: <strong></strong>
+	textContent = pure text
+	innerHTML = get <li> and other html tags
+	tag.innerHTML = ""
+
+	Another difference: textContent treats the string as pure text, you cannot add html to it
+
+Manipulating Attributes
+	getAttribtute vs setAttribute
+
+Making things Interactive:
+
+	DOM Events:
+
+	Clicking on a button, hover over a link, dragging and dropping, pressing the enter key
+
+	var button
+	buttona.addEventListener("click", function() {
+		// do something
+	});
+
+	We can have more than one listener on an element.
+	
+	
