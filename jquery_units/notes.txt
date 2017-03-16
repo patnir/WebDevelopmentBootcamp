@@ -1,0 +1,18 @@
+What is jQuery? 
+	Helps us manipulate the DOM
+	Javascript library
+		We can take code that someone else wrote and we can use all its methods
+
+Why use jQuery?
+	Fixes broken DOM API 
+	Brevity and Clarity
+	Ease of use
+	Cross Browser Support
+	AJAX
+	Lot's of people use it
+Why not use it? 
+	DOM API is not broken
+	It doesn't do anything that you cannot do on your own
+	It could be an unneccessary dependency
+	Performance
+
