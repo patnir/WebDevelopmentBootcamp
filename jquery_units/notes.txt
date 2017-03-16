@@ -16,3 +16,22 @@ Why not use it?
 	It could be an unneccessary dependency
 	Performance
 
+$("css selector") always returns a list even though there is 1 item, unlike document.get...
+
+$("#adorable")
+
+$("selector").css("property", "value")
+
+var styles = {
+	backgroundColor: "pink",
+	fontWeight: "bold"
+}
+
+$("special").css(styles);
+
+or 
+
+$("special").css({
+	backgroundColor: "pink",
+	fontWeight: "bold"
+});
