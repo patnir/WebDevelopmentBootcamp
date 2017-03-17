@@ -1,5 +1,5 @@
 // check off todos by clicking
-$("li").click(function() {
+$("#taskList").on("click", "li", function() {
 	//$(this).css("text-decoration", "line-through");
 	//$(this).css("color", "gray");
 	/*$(this).css({
@@ -21,8 +21,8 @@ $("li").click(function() {
 });
 
 // click on X to delete task
-$(".deleteTask").click(function(event) {
-	console.log("asdf");
+$("#taskList").on("click",".deleteTask", function(event) {
+	//console.log("asdf");
 	event.stopPropagation();
 	$(this).parent().fadeOut(500, function() {
 		$(this).remove();
@@ -31,3 +31,14 @@ $(".deleteTask").click(function(event) {
 
 // Where it says: $("input[type='text'").keypress(function(event){ 
 // it should actually be: $("input[type='text']").keypress(function(event){ the 
+
+// adding listener to text input
+
+$("#txtTodo").on("keypress", function(event) {
+	var task = $.trim($(this).val())
+	if (event.which == 13 && task.length != 0) {
+		console.log("adding_" + task + "_");
+		$("#taskList").append("<li><span class='deleteTask'>X</span> " + task + "</li>");
+		$(this).val("");
+	}
+});
