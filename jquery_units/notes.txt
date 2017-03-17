@@ -35,3 +35,51 @@ $("special").css({
 	backgroundColor: "pink",
 	fontWeight: "bold"
 });
+
+jQuery methods:
+	val - input value, you can put something in the input
+	text - gets just text content, not html
+	attr - changes or gets attribute
+	html - gets inner html
+	addClass
+	removeClass
+	last - returns last element from elementSelector
+	toggleClass
+
+jQuery events
+	click()
+	keypress()
+	on()
+		click
+		dblclick
+		dragstart
+		keypress
+	$(this)
+
+$("input").keypress(function(event) {
+	console.log(event);
+	// char code, key code, which
+	if (event.which == 13) {
+		alert("you hit enter!");
+	}
+});
+
+mouseenter === hover
+
+mouseleave === hover off
+
+click only adds listeners for existing elements
+on will add listeners for all potential future elements
+
+
+Effects:
+
+	.fadeOut()
+	.fadeToggle()
+	$("button").on("click", function() {
+		$("div").fadeOut(1000, function() {
+			$(this).remove();
+		});
+	});
+
+	
