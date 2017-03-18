@@ -38,7 +38,14 @@ $("#txtTodo").on("keypress", function(event) {
 	var task = $.trim($(this).val())
 	if (event.which == 13 && task.length != 0) {
 		console.log("adding_" + task + "_");
-		$("#taskList").append("<li class='task'><span class='deleteTask'>X</span> " + task + "</li>");
+		$("#taskList").append("<li class='task'><span class='deleteTask'><i class='fa fa-trash-o' aria-hidden='true'></i></span> " + task + "</li>");
 		$(this).val("");
 	}
+});
+
+
+// toggle add task
+
+$("#plusIcon").on("click", function() {
+	$("#txtTodo").fadeToggle();
 });
