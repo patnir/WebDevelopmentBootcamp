@@ -12,6 +12,10 @@ app.get("/bye", (req, res) => {
 });
 
 
+app.get("/r/:subname", function(req, res) {
+	res.send(req.params + "\n" + "welcome to " + req.params.subname);
+});
+
 app.get("*", (req, res) => {
 	res.send("dude, wrong page")
 }); // order of routes matters, 
