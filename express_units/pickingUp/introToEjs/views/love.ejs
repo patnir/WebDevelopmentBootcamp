@@ -4,7 +4,15 @@
 	<title>This is the love page</title>
 </head>
 <body>
-<h1>You fell in love with , 5 + 5 = <%= nameVar %></h1>
+<h1>
+You fell in love with , 5 + 5 = <%= nameVar %> 	
+</h1>
+
+<%	if (nameVar.toLowerCase() == "rahul") { %>
+		<h2>Good choice, Rahul is the bomb</h2>
+<% 	} %>
+
+
 <p>What is going on?</p>
 </body>
 </html>
