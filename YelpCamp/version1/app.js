@@ -8,7 +8,13 @@ app.set("view engine", "ejs");
 var campgrounds = [
 	{name: "Salmon Creek", image: "https://upload.wikimedia.org/wikipedia/commons/b/b9/Willesley_Scout_camp.jpg"},
 	{name: "Salmon Creek1", image: "https://upload.wikimedia.org/wikipedia/commons/1/12/Cabin_Camp_3_PRWI.JPG"},
-	{name: "Salmon Creek2", image: "https://upload.wikimedia.org/wikipedia/commons/5/50/Camp_Mantella_02.jpg"}
+	{name: "Salmon Creek2", image: "https://upload.wikimedia.org/wikipedia/commons/5/50/Camp_Mantella_02.jpg"},
+	{name: "Salmon Creek3", image: "https://upload.wikimedia.org/wikipedia/commons/b/b9/Willesley_Scout_camp.jpg"},
+	{name: "Salmon Creek4", image: "https://upload.wikimedia.org/wikipedia/commons/1/12/Cabin_Camp_3_PRWI.JPG"},
+	{name: "Salmon Creek5", image: "https://upload.wikimedia.org/wikipedia/commons/5/50/Camp_Mantella_02.jpg"},
+	{name: "Salmon Creek6", image: "https://upload.wikimedia.org/wikipedia/commons/b/b9/Willesley_Scout_camp.jpg"},
+	{name: "Salmon Creek7", image: "https://upload.wikimedia.org/wikipedia/commons/1/12/Cabin_Camp_3_PRWI.JPG"},
+	{name: "Salmon Creek8", image: "https://upload.wikimedia.org/wikipedia/commons/5/50/Camp_Mantella_02.jpg"}
 ];
 
 app.get("/", function(req, res) {
